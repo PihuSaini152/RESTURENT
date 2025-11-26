@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main1{
+        background-color: yellow;
+        height: 400px;   
+    }
+    .carda{
+        height: 100px;
+        /* width: 480px; */
+        background-color: white;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto 200px;
+        grid-template-rows: auto  auto;
+        gap: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .card1{
+        padding-left: 100px;
+        padding-top: 50px;   
+    }
+    .card0{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto;
+    }
+    @media (max-width:1080px) {
+        .card0{
+        display: grid;
+        grid-template-columns: auto  ;
+        grid-template-rows: auto auto;
+        max-width: 600px;
+    }
+    }
+    @media (max-width:750px) {
+        .card0{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto;
+        max-width: 500px;
+    }
+    }
+    @media (max-width:650px) {
+        .card0{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        max-width: 400px;
+    }
+    }
+    @media (max-width:550px) {
+        .card0{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto;
+        max-width: 300px;
+    }
+    }
+    .main2{
+        padding-top: 50px;
+    }
+    .card2{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+    @media (max-width:950px) {
+        .card2{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto;
+        padding-top: 400px;
+        padding-left: 100px;
+    }
+}
+    @media (max-width:850px) {
+        .card2{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto;
+        padding-top: 400px;
+    }
+}
+@media (max-width:750px) {
+        .card2{
+        display: grid;
+        grid-template-columns: auto  ;
+        grid-template-rows: auto auto auto auto;
+        padding-top: 400px;
+        padding-left: 200px;
+    }
+}
+@media (max-width:650px) {
+        .card2{
+        display: grid;
+        grid-template-columns: auto  ;
+        grid-template-rows: auto auto auto auto;
+        padding-top: 400px;
+        padding-left: 180px;
+    }
+}
+.main3{
+    padding-top: 50px;
+
+}
+.heading2{
+    display: flex;
+    justify-content: center;
+    color:  #F17228;
+    
+}
+.card3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    padding-left: 50px;
+}
+@media (max-width:950px) {
+    .card3{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    padding-left: 100px;
+}
+}
+@media (max-width:750px) {
+    .card3{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 200px;
+}
+}
+@media (max-width:550px) {
+    .card3{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 200px;
+}
+}
+.main4{
+    padding-top: 50px;
+}
+.heading3{
+    display: flex;
+    justify-content: center;
+}
+.card4{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    padding-left: 30px;
+}
+@media (max-width:950px) {
+    .card4{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto;
+    padding-left: 100px;
+    gap: 30px;
+}
+}
+@media (max-width:650px) {
+    .card4{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 200px;
+    gap: 30px;
+}
+}
+@media (max-width:550px) {
+    .card4{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 180px;
+    gap: 30px;
+}
+}
+.main5{
+    padding-top: 50px;
+}
+.heading4{
+    display: flex;
+    justify-content: center;
+}
+.card5{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    padding-left: 50px;
+    gap: 0px;
+}
+@media (max-width:950px){
+    .card5{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    padding-left: 150px;
+    gap: 50px;
+}
+}
+@media (max-width:650px){
+    .card5{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 200px;
+    gap: 50px;
+}
+}
+@media (max-width:450px){
+    .card5{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 100px;
+    gap: 50px;
+}
+}
+.card6{
+    padding-top: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
+@media (max-width:950px){
+    .card6{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto; 
+    padding-left: 150px;
+}
+}
+@media (max-width:650px){
+    .card6{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto; 
+    padding-left: 200px;
+}
+}
+@media (max-width:450px){
+    .card6{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto; 
+}
+}
+.main6{
+    padding-top: 100px;
+}
+.card7{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 50px;
+    gap: 0px;
+}
+@media (max-width:950px) {
+    .card7{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto;
+    padding-left: 150px;
+}
+}
+@media (max-width:650px) {
+    .card7{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding-left: 200px;
+}
+}
+.main7{
+    padding-top: 50px;
+    background-color: #FEEFD0;
+    height: 560px;
+}
+@media (max-width:1050px) {
+    .main7{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding-top: 100px;
+    }
+}
+.card8{
+        height: 100px;
+        max-width: 600px;
+        background-color: white;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        margin-left: 200px;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+    @media (max-width:650px) {
+        .card8{
+        height: 100px;
+        max-width: 600px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto;
+        padding-left: 10px;
+        background: none;
+        gap: 20px;
+    }
+    }
+   .card9{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+   }
+   @media (max-width:870px) {
+    .card9{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding-top: 200px;
+    background-color: #FEEFD0;
+   }
+   .car9b{
+    padding-left: 400px;
+   }
+   }
+   @media (max-width:550px) {
+    .card9{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding-top: 200px;
+    background-color: #FEEFD0;
+   }
+   }
+   @media (max-width:750px) {
+    .card10{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto;
+    }
+   }
+   .card10{
+    height: 250px;
+    width: 750px;
+    border-radius: 10px;
+    box-shadow:  0px 3px 3px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin-left: 200px;
+    margin-top: 100px;
+   }
+   .card11{
+    height: 250px;
+    width: 750px;
+    border-radius: 10px;
+    box-shadow:  0px 3px 3px;
+    margin-top: 100px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    
+   }
+   .card12{
+    height: 280px;
+    width: 750px;
+    border-radius: 10px;
+    box-shadow:  0px 3px 3px;
+    margin-top: 100px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+   }
+   .main8{
+    margin-top: 1200px;
+    background-image: url(Image.png);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   @media (max-width:850px) {
+    .main8{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto ;
+        padding-right: 100px;
+    }
+   }
+   .footer1{
+    background-color: black;
+    height: 600px;
+   }
+   .footer1 li{
+        color: white;
+        padding-left: 50px;
+        list-style: none;    
+    }
+    .footer1 ul{
+        float: left;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    @media (max-width:1050px) {
+       .footer1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+       
+       } 
+    }
+ 
+  
+   
+   
+   
+</style>
+<body>
+    <div class="main1">
+     <div class="card0">
+        <div class="card1">
+            <div class="heading1">
+                <h1 style="color: white;font-size: 50px;">Are you starving?</h1>
+                <p>Within a few clicks, find meals that are accessible near you</p>
+            </div>
+            <div class="carda">
+            <div class="cardb" style="background-color: rgb(255, 159, 124); height: 25px; width: 100px; border-radius: 5px; padding-left: 7px;padding-top: 4px;">
+                <img src="bike.png" alt="">
+                <a href="" style="text-decoration: none;color: orangered;">Delivery</a>
+            </div>
+            <div class="cardc">
+                <img src="Icon (3).png">
+                <a href="" style="text-decoration: none;color: black;">Pickup</a>
+            </div>
+            <div class="cardd">
+                <div class="carde" style="background-color: rgb(238, 232, 232); height: 30px;  border-radius: 5px;">
+                    <img src="Icon (4).png" style="height: 20px;margin-top: 4px;padding-left: 8px;">
+                    <input type="text" placeholder="Enter Your Address" style="border: none;  background: none;">
+                </div>
+            </div>
+            <div class="cardf">
+                <button style="background-color: rgb(244, 73, 11); border: none; border-radius: 5px; color: white; height: 30px;width: 100px; margin-left: 30px;"><img src="Icon (5).png">Find Food</button>
+            </div>
+          </div>
+        </div>
+          <div class="carde">
+            <div class="cardf">
+            <img src="meggie.png" style="height: 350px ; width: 450px; padding-top: 50px;">
+          </div>
+        </div>
+     </div>
+    </div>
+    <div class="main2">
+        <div class="card2">
+            <div class="card vage">
+            <img src="Food Photo (4).png" style="height: 200px; width: 220px;" >
+            <h3>Greys Vage</h3>
+            <button style="background-color: rgb(252, 187, 163);color: orangered; height: 30px; border: none; border-radius: 5px;">6 Days Remaining</button>
+            </div>
+            <div class="card vage">
+                <img src="Food Photo (7).png"  style="height: 200px; width: 220px;"  >
+                <h3>Greys Vage</h3>
+            <button style="background-color: rgb(252, 187, 163);color: orangered; height: 30px; border: none; border-radius: 5px;">6 Days Remaining</button>
+            </div>
+             <div class="card vage">
+                 <img src="Food Photo (5).png"  style="height: 200px; width: 220px;" >
+                 <h3>Greys Vage</h3>
+            <button style="background-color: rgb(252, 187, 163);color: orangered; height: 30px; border: none; border-radius: 5px;">7 Days Remaining</button>
+              </div>
+            <div class="card vage">
+                 <img src="Food Photo (6).png" style="height: 200px; width: 220px;"  >
+                 <h3>Greys Vage</h3>
+            <button style="background-color: rgb(252, 187, 163);color: orangered; height: 30px; border: none; border-radius: 5px;">8 Days Remaining</button>
+              </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="heading2">
+            <h1 >How does it work</h1>
+        </div>
+        <div class="card3">
+            <div class="card work">
+                <img src="Map Marker.png" style="height: 150px;" >
+                <h4>Select Location</h4>
+                <p>Choose the location where your <br> food will be delivered.</p>
+            </div>
+            <div class="card work">
+                <img src="Icons (1).png" style="height: 150px;">
+                <h4>Choose Order</h4>
+                <p>Check over hundreds of menus to <br> pick your favorite food</p>
+            </div>
+            <div class="card work">
+                <img src="Icons (2).png" style="height: 150px;">
+                <h4>Pay Advance</h4>
+                <p>It's quick, safe, and simple.  <br>Select several methods of payment</p>
+            </div>
+            <div class="card work">
+                <img src="Icons (3).png" style="height: 150px; width: 120px;">
+                <h4>Enjoy Meals</h4>
+                <p>Food is made and delivered <br> directly to your home.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <div class="heading3">
+            <h1>Popular items</h1>
+        </div>
+        <div class="card4">
+            <div class="card items">
+                <img src="Frame 40.png" style="height: 200px; width: 180px;">
+                <h5>Cheese Burger</h5>
+              <span style="color: rgb(241, 220, 24);"> <img src="Icon (7).png" >  Burger Arena </span> 
+              <h2> $3.88</h2>
+              <button style="height: 35px; width: 150px; border: 0px solid; border-radius: 8px; background-color: orangered; color: white; font-size: 15px; font-weight: bold;">order Now</button>
+            </div>
+            <div class="card items">
+                <img src="Frame 40 (1).png"  style="height: 200px; width: 180px;" >
+                <h5>Toffe’s Cake</h5>
+                <span style="color: rgb(241, 220, 24);"> <img src="Icon (7).png" >  Top Sticks</span> 
+                <h2> $4.00</h2>
+                <button style="height: 35px; width: 150px; border: 0px solid; border-radius: 8px; background-color: orangered; color: white; font-size: 15px; font-weight: bold;">order Now</button>
+            </div>
+            <div class="card items">
+                <img src="Frame 40 (2).png" style="height: 200px; width: 180px;">
+                <h5>Dancake</h5>
+                <span style="color: rgb(241, 220, 24);"> <img src="Icon (7).png" >  Cake World</span> 
+                <h2> $1.99</h2>
+                <button style="height: 35px; width: 150px; border: 0px solid; border-radius: 8px; background-color: orangered; color: white; font-size: 15px; font-weight: bold;">order Now</button>
+            </div>
+            <div class="card items">
+                <img src="Frame 40 (3).png" style="height: 200px; width: 180px;">
+                <h5>Crispy Sandwitch</h5>
+                <span style="color: rgb(241, 220, 24);"> <img src="Icon (7).png" >  Fastfood Dine</span> 
+                <h2> $3.00</h2>
+                <button style="height: 35px; width: 150px; border: 0px solid; border-radius: 8px; background-color: orangered; color: white; font-size: 15px; font-weight: bold;">order Now</button>
+            </div>
+            <div class="card items">
+                <img src="Frame 40 (4).png" style="height: 200px; width: 180px;">
+                <h5>Thai  Soup</h5>
+                <span style="color: rgb(241, 220, 24);"> <img src="Icon (7).png" >  Foody man</span>
+                <h2> $2.79</h2>
+                <button style="height: 35px; width: 150px; border: 0px solid; border-radius: 8px; background-color: orangered; color: white; font-size: 15px; font-weight: bold;">order Now</button>
+            </div>             
+            </div>
+    </div>
+    <div class="main5">
+        <div class="heading4">
+            <h1>Featured Restaurants</h1>
+        </div>
+        <div class="card5">
+            <div class="featured">
+                <img src="Food Photo.png" style="height: 200px; width: 200px;"> <br>
+             <span>   <img src="Restaruant Logo.png" style="height: 30px;">Foodworld <br><img src="Icon (8).png" ><span style="color: rgb(255, 255, 0);"> 46 </span>   </span> <br>
+             <button style="background-color:rgb(248, 170, 142); color: orangered; border: none; border-radius: 5px; height: 20px;">Opens tomorrow</button>
+            </div>
+            <div class="featured">
+                <img src="Food Photo (1).png"  style="height: 200px; width: 200px;"> <br>
+                <span> <img src="Restaruant Logo (1).png"  style="height: 30px;">Pizzahub <br> <img src="Icon (8).png"> <span style="color: rgb(255, 255, 0);"> 40 </span> </span> <br>
+                <button style="background-color:rgb(248, 170, 142); color: orangered; border: none; border-radius: 5px; height: 20px;">Opens tomorrow</button>
+            </div>
+            <div class="featured">
+                <img src="Food Photo (2).png"  style="height: 200px; width: 200px;"> <br>
+                <span> <img src="Restaruant Logo (2).png"  style="height: 30px;">Donuts hut <br> <img src="Icon (8).png" alt=""> <span style="color: rgb(255, 255, 0);"> 20 </span> </span><br>
+                <button style="background-color:rgb(182, 254, 182); color:  green; border: none; border-radius: 5px; height: 20px;">Open Now</button>
+            </div>  
+            <div class="featured">
+                <img src="Food Photo (4).png"  style="height: 200px;width: 200px;"><br>
+                <span><img src="Restaruant Logo (3).png"  style="height: 30px;">Donuts hut <br> <img src="Icon (8).png" alt=""> <span style="color: rgb(255, 255, 0);"> 50 </span> </span> <br>
+                <button style="background-color:rgb(182, 254, 182); color:  green; border: none; border-radius: 5px; height: 20px;">Open Now</button>
+            </div>
+         </div>
+         <div class="card6">
+             <div class="card fast">
+                <img src="Food Photo (8).png" style="height: 200px;width: 200px;"><br>
+                <span><img src="Restaruant Logo (8).png" style="height: 30px;">Ruby Tuesday <br> <img src="Icon (8).png" alt=""><span style="color: rgb(255, 255, 0);">26</span></span> <br>
+                <button style="background-color:rgb(182, 254, 182); color:  green; border: none; border-radius: 5px; height: 20px;">Open Now</button>
+             </div>
+             <div class="card fast">
+                <img src="Food Photo (7).png" style="height: 200px; width: 200px;" ><br>
+                <span><img src="Restaruant Logo (5).png" style="height: 30px;">Kuakata Fried Chicken <br><img src="Icon (8).png" alt=""> <span style="color: rgb(255, 255, 0);">53</span></span> <br>
+                <button style="background-color:rgb(182, 254, 182); color:  green; border: none; border-radius: 5px; height: 20px;">Open Now</button>
+             </div>
+             <div class="card fast">
+                <img src="Food Photo (6).png" style="height: 200px; width: 200px;" > <br>
+                <img src="Restaruant Logo (6).png" style="height: 30px;">Red Square <br><img src="Icon (8).png" alt=""> <span style="color: rgb(255, 255, 0);">45</span></span> <br>
+                <button style="background-color:rgb(182, 254, 182); color:  green; border: none; border-radius: 5px; height: 20px;">Open Now</button>
+             </div>
+             <div class="card fast">
+                <img src="Food Photo (5).png" style="height: 200px; width: 200px;"><br>
+                <span><img src="Restaruant Logo (7).png" style="height: 30px;">Taco Bell <br><img src="Icon (8).png" alt=""> <span style="color: rgb(255, 255, 0);">35</span></span><br>
+                <button style="background-color:rgb(182, 254, 182); color:  green; border: none; border-radius: 5px; height: 20px;">Open Now</button>
+             </div>
+         </div>
+    </div>
+    <div class="main6">
+        <div class="heading5">
+            <h1 style="padding-left: 100px;">Search by Food</h1>
+        </div>
+        <div class="card7">
+            <div class="card food">
+                <img src="Food Photo (9).png" style="height: 120px;" >
+                <p style="padding-left: 40px;">Pizza</p>
+            </div>
+            <div class="card food">
+                <img src="Food Photo (10).png"  style="height: 120px;">
+                <p  style="padding-left: 40px;">Burger</p>
+            </div>
+            <div class="card food">
+                <img src="Food Photo (11).png"  style="height: 120px;">
+                <p  style="padding-left: 40px;">Noodles</p>
+            </div>
+            <div class="card food">
+                <img src="Food Photo (12).png" style="height: 120px;" >
+                <p  style="padding-left: 20px;">Sub-sandwitch</p>
+            </div>
+            <div class="card food">
+                <img src="Food Photo (13).png" style="height: 120px;" >
+                <p  style="padding-left: 30px;">Chowmein</p>
+            </div>
+            <div class="card food">
+                <img src="Food Photo (14).png" style="height: 120px;" >
+               <p  style="padding-left: 30px;"> Steak </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="main7">
+        <div class="card8">
+            <div>
+                <img src="Icon (1).png" style="height: 80px; padding-left: 20px;"> 
+                <h2 style="float: left; color: #FB3C00; padding-top: 20px; font-size: 20px;">Daily <br> Discounts </h2>
+            </div>
+            <div>
+                <img src="Icon (9).png" style="height: 80px;  padding-left: 20px;">
+                <h2 style="float: left; color: #FB3C00; padding-top: 20px;  font-size: 20px;">Live <br> Tracing</h2>
+            </div>
+            <div>
+                <img src="Icon (10).png" style="height: 80px;  padding-left: 20px;">
+                <h2 style="float: left; color: #FB3C00; padding-top: 20px;  font-size: 20px;">Quick <br> Delivery</h2>
+            </div>
+        </div>
+        <div class="card9">
+            <div class="9a">
+                <img src="phone.png" style="height: 350px; padding-top: 100px; padding-left: 120px;">
+            </div>
+            <div class="9b" style="padding-top: 130px;">
+                <h1 style="color: orangered; font-size: 45px; padding-left: 25px;">Install the app</h1>
+                <p style="font-size: 13px; padding-left: 25px;">It's never been easier to order food. Look for the <br> finest discounts and you'll be lost in a world of  <br>delectable food.</p>
+                <img src="Google Play Download.png" style="height: 100px;">
+                <img src="App Store Download Button.png"  style="height: 100px; padding-right: 80px;">
+            </div>
+        </div>
+        <div class="card10">
+            <div class="card10a">
+               <h1 style="padding-left:30px ;">Best deals <span style="color: rgb(255, 179, 0)"> Crispy  <br> Sandwiches</h1> </span>
+               <p style="font-size: 13px; padding-left: 30px;">Enjoy the large size of sandwiches. Complete <br>
+                perfect slice of sandwiches.</p>
+                <button style="height: 30px; width: 200px;  border-radius: 5px; border: none; background-color: rgb(255, 179, 0);color: white; margin-left: 30px; margin-top: 20px;">Proceed to order</button>
+            </div>
+            <div class="card10b">
+                <img src="Right.png" style="height: 245px; padding-top: 5px;padding-left: 53px;width: 430px; ">
+            </div>
+        </div>
+        <div class="card11">
+            <div class="card11a">
+                <img src="Right (1).png" style="height: 245px; padding-top: 5px;width: 410px; ">
+            </div>
+            <div class="card11b">
+                <h1>Celebrate  parties <br>
+                    with <span style="color:rgb(255, 179, 0) ;"> Fried Chicken</h1> </span>
+                    <p style="font-size: 13px;">Get the best fried chicken smeared with a lip <br> smacking lemon chili flavor. Check out  <br>
+                        best deals for fried chicken.</p>
+                        <button style="height: 30px; width: 200px;  border-radius: 5px; border: none; background-color: rgb(255, 179, 0);color: white;">Proceed to order</button>
+            </div>
+        </div>
+          <div class="card12">
+            <div class="card12a">
+                <h1  style="padding-left: 30px;">Wanna eat hot <br>
+                    & spicy <span style="color: rgb(255, 179, 0) ;"> Pizza?  </h1> </span>
+                    <p style="font-size: 12px;padding-left: 30px;">Pair up with a friend and enjoy the <br>
+                        hot and crispy pizza pops. Try it  <br>
+                        with the best deals.</p>
+                        <button style="height: 30px; width: 200px;  border-radius: 5px; border: none; background-color: rgb(255, 179, 0);color: white; margin-left: 30px; margin-top: 20px;">Proceed to order</button>
+            </div>
+            <div class="card12b">
+                <img src="Right (2).png" style="height: 280px;width: 430px; padding-left: 90px;">
+            </div>
+        </div>
+    </div>
+    <div class="main8">
+        <div class="card13">
+            <h1 style="text-align: center; color: white; padding-top: 80px;">Are you ready to order with <br> the best deals?</h1>
+            <button style="height: 30px; width: 180px; margin-left: 450px; border-radius: 5px; border: none; color: white; background-color: #FB3C00;">Proceed to order</button>
+        </div>
+    </div>
+    <div class="footer1">
+        <div class="card14">
+            <h3 style="color: white; padding-left:130px; padding-top: 70px;">our top cities</h3>
+        </div>
+        <div class="card15" style="color: white;">
+            <table>
+                <ul>
+                    <li>San Francisco</li>
+                    <li>Miami</li>
+                    <li>San Diego</li>
+                    <li>East Bay</li>
+                    <li>Long Beach</li>
+                </ul>
+                <ul>
+                    <li>Los Angeles</li>
+                    <li>Washington DC</li>
+                    <li>Seattle</li>
+                    <li>Portland</li>
+                    <li>Nashville</li>
+                </ul>
+                <ul>
+                    <li>New York City</li>
+                    <li>Orange County</li>
+                    <li>Atlanta</li>
+                    <li>Charlotte</li>
+                    <li>Denver</li>
+                </ul>
+                <ul>
+                    <li>Chicago</li>
+                    <li>Phoenix</li>
+                    <li>Las Vegas</li>
+                    <li>Sacramento</li>
+                    <li>Oklahoma City</li>
+                </ul>
+                <ul>
+                    <li>Columbus</li>
+                    <li>New Mexico</li>
+                    <li>Albuquerque</li>
+                    <li>Sacramento</li>
+                    <li>New Orleans</li>
+                </ul>
+            </table>
+        </div>
+        <div class="card16">
+            <div class="card16a">
+                <table>
+                    <ul>
+                        <h3 style="color: white; padding-left: 50px;">Company</h3>
+                        <li>About us</li>
+                        <li>Team</li>
+                        <li>Careers</li>
+                        <li>Blog</li>
+                    </ul>
+                    <ul>
+                        <h3 style="color: white; padding-left: 50px;">Contact</h3>
+                        <li>Help & Support</li>
+                        <li>Partner with us </li>
+                        <li>Ride with us</li>
+                    </ul>
+                    <ul>
+                        <h3 style="color: white; padding-left: 50px;">Legal</h3>
+                        <li>Terms & Conditions</li>
+                        <li>Refund & Cancellation</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </table>
+            </div>
+            </div>
+            <div class="card17">
+                <h3 style="color: white; padding-top: 240px; padding-left: 200px; ">Follow us</h3>
+                <img src="Icons (4).png" alt="">
+                <h4 style="color: white; padding-left: 100px;">Receive exclusive offers in your mailbox</h4>
+                <form action="">
+                    <input type="text" placeholder="Enter Your email" style="height: 30px; border-radius: 5px; border: 0px solid; padding-left: 15px; background-color: #3d3c3c; margin-left: 75px;">
+                    <button style="height: 30px; border: 0px solid; border-radius: 5px ; background-color: #FFB30E; color: white; box-shadow: 1px 1px 2px;">Subscribe</button>
+                </form>
+            </div>
+     </div>
+            
+    
+   
+
+</body>
+</html>
